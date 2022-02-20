@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FINAL EXAM</title>
+	<style type="text/css">
+		body
+		{
+			background-color: lightgrey;
+		}
+		h1	
+		{
+			color: green;
+			text-align: center;
+		}
+		h2	
+		{
+			color: purple;
+			text-align: center;
+		}
+		button
+		{
+			background-color: grey;
+			margin-left: 550px;
+			width: 200px;
+			height: 30px;
+			color: white;
+			border-radius: 10px;
+		}
+
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		let cityarray=[];
+		let memberarray=[];
+		function members() 
+		{
+			/*let name=prompt("Enter the names");*/
+			
+			let size=prompt("how many members you want?")
+			for(let i=0;i<size;i++)
+			{
+				memberarray[i]=prompt("Enter the name of member "+(i+1));
+				
+			}
+			/*alert("List of Members :- "+"\n"+memberarray);*/
+		}
+		
+
+		function cities()
+		{
+			/*let city=prompt("Enter the cities");*/
+			
+			let max=prompt("how many cities name you want?")
+			for(let i=0;i<max;i++)
+			{
+				cityarray[i]=prompt("Enter the name of city "+(i+1));
+			}
+			/*alert("List of Cities :- "+"\n"+cityarray);*/
+		}
+		function listmember() 
+		{
+			alert("List of Members :- "+"\n"+memberarray);
+		}
+		function listcity()
+		{
+			alert("List of Cities :- "+"\n"+cityarray);
+		}
+		
+	</script>
+	<h1>FINAL EXAM FOR JAVASCRIPT</h1><br><hr>
+	<h2>ADD YOUR DATA IN ARRAY</h2>
+	<button onclick="members();">ADD MEMBERS</button><br><br>
+	<button onclick="cities();">ADD CITIES</button><br><br>
+	<h2>YOU CAN SEE THE DATA OF ARRAY</h2>
+	<button onclick="listmember();">LIST OF MEMBERS</button><br><br>
+	<button onclick="listcity();">LIST OF CITIES</button>
+</body>
+</html>
